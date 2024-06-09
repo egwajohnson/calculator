@@ -7,23 +7,45 @@
 .container {
     width: 100%;
     height: 100vh;
-    background-color: rgb(155, 148, 148);
+    background-color: rgba(14, 56, 100, 0.849);
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.container .calcu {
+    width: 50%;
+    height: 80vh auto;
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-30%, -30%);
+}
+.container .calcu .cal {
+    width: 60% auto;
+    height: 20vh auto;
+    display: flex;
+
 }
 .container table {
-    border: 1px solid black; 
+    border: 1px solid black;
     margin-left: auto; 
     margin-right: auto; 
+    border-collapse: collapse;
+    color: white;
 }
 
 .container table tr td input[type="text"] { 
     width: 100%;
+    height: 10vh;
     padding: 20px 30px; 
     font-size: 24px; 
     font-weight: bold; 
     border: none; 
     border-collapse: collapse;
-    border-radius: 5px; 
-    border: 2px solid black; 
+
+ 
+   
 } 
 
 .container .cal .c {
@@ -34,17 +56,12 @@
 
 .container table tr td  input[type="button"] { 
     width: 100%; 
-    padding: 20px 40px; 
-    background-color: green; 
+    padding: 10px 20px; 
+    background-color: rgba(14, 56, 100, 0.849); 
     color: white; 
     font-size: 24px; 
     font-weight: bold; 
-    border: none; 
-    border-radius: 5px; 
 } 
 .container .cal .equa {
     background-color: rgb(240, 236, 39);
-}
-.container .cal .plus {
-    width: 100%;
 }
