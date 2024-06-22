@@ -1,67 +1,78 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "poppins", sans-serif;
+    font-family: "Helvetica Neue", sans-serif;
     box-sizing: border-box;
-}
-.container {
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(14, 56, 100, 0.849);
+  }
+  
+  body {
+    background-color: #8bc6ec;
+    min-height: 100vh;
     display: flex;
-    position: relative;
     align-items: center;
-}
-.container .calcu {
-    width: 50%;
-    height: 80vh auto;
-    display: flex;
-    position: absolute;
-    top: 30%;
-    left: 30%;
-    transform: translate(-30%, -30%);
-}
-.container .calcu .cal {
-    width: 60% auto;
-    height: 20vh auto;
-    display: flex;
-
-}
-.container table {
-    border: 1px solid black;
-    margin-left: auto; 
-    margin-right: auto; 
-    border-collapse: collapse;
-    color: white;
-}
-
-.container table tr td input[type="text"] { 
+    justify-content: center;
+  }
+  
+  .container {
+    background: #000000;
+    padding: 25px;
+    width: 350px;
+    border-radius: 10px;
+  }
+  .calc {
+    margin-bottom: 20px;
+    padding-left: 5px;
+  }
+  
+  .calc input {
     width: 100%;
-    height: 10vh;
-    padding: 20px 30px; 
-    font-size: 24px; 
-    font-weight: bold; 
-    border: none; 
-    border-collapse: collapse;
-
- 
-   
-} 
-
-.container .cal .c {
-    background-color: red;
-    color: white;
+    height: 70px;
+    font-size: 2.5rem;
+    text-align: start;
+    background: white;
+    text-decoration: none;
+    border: none;
+    outline: none;
+  }
+  button {
+    background: #333333;
+    color: #fff;
     font-size: 1.5rem;
-}
+    border: none;
+    /* border-radius: 70%; */
+    cursor: pointer;
+    height: 65px;
+    width: 65px;
+  }
+  
+  button:active,
+  button:focus {
+    filter: brightness(120%);
+  }
+  
+  .calc-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px; 
+  }
+  
+  .key-zero {
+    width: 100%;
+  }
+  .c {
+    grid-column: span 2;
+    width: 100%;
+    background-color: red;
+  }
+  
+  .plus {
+    width: 100%;
+    grid-row: span 4;
+    height: 50%;
+  }
+   .equal {
+     width: 100%;
+     background-color: rgb(236, 236, 9);
 
-.container table tr td  input[type="button"] { 
-    width: 100%; 
-    padding: 10px 20px; 
-    background-color: rgba(14, 56, 100, 0.849); 
-    color: white; 
-    font-size: 24px; 
-    font-weight: bold; 
-} 
-.container .cal .equa {
-    background-color: rgb(240, 236, 39);
-}
+   }

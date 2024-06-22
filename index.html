@@ -8,45 +8,28 @@
 </head>
 <body>
     <div class="container">
-        <div class="calcu">
-            <table class="cal">
-                <tr>
-                    <td colspan="4">
-                        <input type="text" class="result">
-                    </td>
-                </tr>
-
-                <tr> 
-                    <td colspan="2"><input type="button" value="c" class="c"></td> 
-                    <td><input type="button" value="/"></td> 
-                    <td><input type="button" value="*"></td> 
-                </tr> 
-
-                <tr>  
-                    <td><input type="button" value="7"></td> 
-                    <td><input type="button" value="8"></td> 
-                    <td><input type="button" value="9"></td> 
-                    <td><input type="button" value="-"></td> 
-                </tr> 
-
-                <tr>  
-                    <td><input type="button" value="4"></td> 
-                    <td><input type="button" value="5"></td> 
-                    <td><input type="button" value="7"></td> 
-                    <td colspan="2"><input type="button" value="+" class="plus"></td> 
-                </tr> 
-                <tr>  
-                    <td><input type="button" value="3"></td> 
-                    <td><input type="button" value="2"></td> 
-                    <td><input type="button" value="1"></td>  
-                </tr>
-
-                <tr>  
-                    <td><input type="button" value="0"></td> 
-                    <td><input type="button" value="00"></td> 
-                    <td><input type="button" value="=" class="equa"></td>  
-                </tr> 
-            </table>
+        <div class="calc">
+            <label for="cal"></label>
+            <input type="number" name="cal">
+        </div>
+        <div class="calc-keys">
+            <button type="button" class="key-others operations c">C</button>
+            <button type="button" class="key-others operations">/</button>
+            <button type="button" class="key-others operations">*</button>
+            <button type="button" class="numbers">7</button>
+            <button type="button" class="numbers">8</button>
+            <button type="button" class="numbers">9</button>
+            <button type="button" class="key-operate operations">-</button>
+            <button type="button" class="numbers">4</button>
+            <button type="button" class="numbers">5</button>
+            <button type="button" class="numbers">6</button>
+            <button type="button" class="key-operate operations plus">+</button>
+            <button type="button" class="numbers">3</button>
+            <button type="button" class="numbers">2</button>
+            <button type="button" class="numbers">1</button>
+            <button type="button" class="key-zero numbers">0</button>
+            <button type="button" class="numbers">00</button>
+            <button type="button" class="key-operate operations equal">=</button>
         </div>
     </div>
 </body>
